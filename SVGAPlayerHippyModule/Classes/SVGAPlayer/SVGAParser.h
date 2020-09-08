@@ -32,4 +32,10 @@
        completionBlock:(void ( ^ _Nullable)(SVGAVideoEntity * _Nonnull videoItem))completionBlock
           failureBlock:(void ( ^ _Nullable)(NSError * _Nonnull error))failureBlock;
 
+
+
+- (void)parseWithNamedPath:(nonnull NSString *)localhostFilePath
+completionBlock:(void ( ^ _Nullable)(SVGAVideoEntity * _Nonnull))completionBlock
+   failureBlock:(void ( ^ _Nullable)(NSError * _Nonnull))failureBlock;
+
 @end

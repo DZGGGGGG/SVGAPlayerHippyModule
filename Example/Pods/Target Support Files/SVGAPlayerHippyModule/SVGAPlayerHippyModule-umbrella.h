@@ -10,7 +10,6 @@
 #endif
 #endif
 
-#import "Svga.pbobjc.h"
 #import "SVGA.h"
 #import "SVGAAudioEntity.h"
 #import "SVGAAudioLayer.h"
@@ -25,6 +24,7 @@
 #import "SVGAVideoEntity.h"
 #import "SVGAVideoSpriteEntity.h"
 #import "SVGAVideoSpriteFrameEntity.h"
+#import "Svga.pbobjc.h"
 
 FOUNDATION_EXPORT double SVGAPlayerHippyModuleVersionNumber;
 FOUNDATION_EXPORT const unsigned char SVGAPlayerHippyModuleVersionString[];

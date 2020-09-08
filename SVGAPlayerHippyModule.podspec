@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
   
-  non_arc_files = 'SVGAPlayerHippyModule/Classes/SVGAPlayer/pbobjc/Svga.pbobjc.m'
+  non_arc_files = 'SVGAPlayerHippyModule/Classes/SVGAPlayer/pbobjc/Svga.pbobjc.{h,m}'#'SVGAPlayerHippyModule/Classes/SVGAPlayer/pbobjc/Svga.pbobjc.m',
   s.source_files = 'SVGAPlayerHippyModule/Classes/SVGAPlayer/**/*'
   s.exclude_files = non_arc_files
 

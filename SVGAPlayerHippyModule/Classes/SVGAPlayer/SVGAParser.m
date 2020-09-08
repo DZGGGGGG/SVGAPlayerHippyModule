@@ -185,6 +185,25 @@ static NSOperationQueue *unzipQueue;
     }];
 }
 
+- (void)parseWithNamedPath:(NSString *)localhostFilePath
+       completionBlock:(void (^)(SVGAVideoEntity * _Nonnull))completionBlock
+          failureBlock:(void (^)(NSError * _Nonnull))failureBlock {
+    //
+    NSString *filePath = localhostFilePath;
+    if (filePath == nil) {
+        if (failureBlock) {
+            [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                failureBlock([NSError errorWithDomain:@"SVGAParser" code:404 userInfo:@{NSLocalizedDescriptionKey: @"File not exist."}]);
+            }];
+        }
+        return;
+    }
+    [self parseWithData:[NSData dataWithContentsOfFile:filePath]
+               cacheKey:[self cacheKey:[NSURL fileURLWithPath:filePath]]
+        completionBlock:completionBlock
+           failureBlock:failureBlock];
+}
+
 - (void)clearCache:(nonnull NSString *)cacheKey {
     NSString *cacheDir = [self cacheDirectory:cacheKey];
     [[NSFileManager defaultManager] removeItemAtPath:cacheDir error:NULL];
