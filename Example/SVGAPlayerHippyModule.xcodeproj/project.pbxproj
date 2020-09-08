@@ -37,9 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1B26825AE8D533D5B508DA1D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1B26825AE8D533D5B508DA1D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		26318C682F0421D11A47E30A /* Pods_SVGAPlayerHippyModule_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SVGAPlayerHippyModule_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4413ED3D56B99BAAD32138E1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4413ED3D56B99BAAD32138E1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* SVGAPlayerHippyModule_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SVGAPlayerHippyModule_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,7 +65,7 @@
 		72C5DD38CEDA03BCF33C949B /* Pods-SVGAPlayerHippyModule_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SVGAPlayerHippyModule_Tests.release.xcconfig"; path = "Target Support Files/Pods-SVGAPlayerHippyModule_Tests/Pods-SVGAPlayerHippyModule_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B20469C3B2E49FAAC448505 /* Pods-SVGAPlayerHippyModule_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SVGAPlayerHippyModule_Example.debug.xcconfig"; path = "Target Support Files/Pods-SVGAPlayerHippyModule_Example/Pods-SVGAPlayerHippyModule_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		AC0A76ECE67F8631F9C8DCB8 /* SVGAPlayerHippyModule.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SVGAPlayerHippyModule.podspec; path = ../SVGAPlayerHippyModule.podspec; sourceTree = "<group>"; };
+		AC0A76ECE67F8631F9C8DCB8 /* SVGAPlayerHippyModule.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SVGAPlayerHippyModule.podspec; path = ../SVGAPlayerHippyModule.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C84A4EEFFE4993C12C118209 /* Pods-SVGAPlayerHippyModule_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SVGAPlayerHippyModule_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SVGAPlayerHippyModule_Tests/Pods-SVGAPlayerHippyModule_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,7 +103,6 @@
 				C84A4EEFFE4993C12C118209 /* Pods-SVGAPlayerHippyModule_Tests.debug.xcconfig */,
 				72C5DD38CEDA03BCF33C949B /* Pods-SVGAPlayerHippyModule_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -346,10 +346,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SVGAPlayerHippyModule_Example/Pods-SVGAPlayerHippyModule_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
 				"${BUILT_PRODUCTS_DIR}/SVGAPlayerHippyModule/SVGAPlayerHippyModule.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVGAPlayerHippyModule.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

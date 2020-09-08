@@ -1,0 +1,6 @@
+framework module SVGAPlayerHippyModule {
+  umbrella header "SVGAPlayerHippyModule-umbrella.h"
+
+  export *
+  module * { export * }
+}

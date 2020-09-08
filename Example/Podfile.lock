@@ -1,0 +1,31 @@
+PODS:
+  - Protobuf (3.13.0)
+  - SSZipArchive (2.1.5)
+  - SVGAPlayerHippyModule (1.0.1):
+    - Protobuf (~> 3.4)
+    - SSZipArchive (~> 2.1.4)
+    - SVGAPlayerHippyModule/no-arc (= 1.0.1)
+  - SVGAPlayerHippyModule/no-arc (1.0.1):
+    - Protobuf (~> 3.4)
+    - SSZipArchive (~> 2.1.4)
+
+DEPENDENCIES:
+  - SVGAPlayerHippyModule (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Protobuf
+    - SSZipArchive
+
+EXTERNAL SOURCES:
+  SVGAPlayerHippyModule:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Protobuf: 3dac39b34a08151c6d949560efe3f86134a3f748
+  SSZipArchive: cefe1364104a0231268a5deb8495bdf2861f52f0
+  SVGAPlayerHippyModule: 3ac5cbca5043a025b75f1045f464f56880114ba2
+
+PODFILE CHECKSUM: cfe2e6726f99232d4cda9466cff8a41bec0a62c4
+
+COCOAPODS: 1.9.1
